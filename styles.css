@@ -1,0 +1,116 @@
+.header{
+  text-align: center;
+  background-color: #000000;
+  color: #ffffff;
+  padding: 1px;
+  width: 100%;
+}
+.navbar{
+  display: flex;
+  text-align: left;
+  background: black;
+  padding: 0px;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.navbar a{
+  color: white;
+  padding: 5px 10px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.navbar a:hover{
+  color: black;
+  background: white;
+  padding 20px
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.side {
+    display: flex;
+    flex: 15%;
+    flex-direction: column;
+    padding: 10px 20px;
+    background: grey;
+  }
+
+.main {
+display: flex;
+flex: 80%;
+padding: 10px 10px;
+
+}
+
+.favnum {
+  display: flex;
+  color: black;
+  background: grey;
+}
+
+.answer {
+  display: flex;
+}
+
+.accordion{
+  flex: 1;
+}
+
+.side code{
+  color: black;
+}
+th, td{
+  margin: 1px;
+  padding: 5px 10px;
+
+}
+
+table {
+  border-style: solid;
+  border-color: black;
+  border-width: 1px;
+  margin: 2px;
+}
+
+.tables {
+  display: flex;
+}
+
+caption {
+  caption-side: top;
+}
+.images{
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 100%;
+
+}
+.imagecolumn{
+  flex: 50%;
+  padding: 0px 5px;
+}
+
+
+.images img{
+  vertical-align: middle;
+  margin-top: 10px
+}
+
+@media (max-width: 800px){
+  .imagecolumn{
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+.tr th{
+  text-align: left;
+}
+
+.tr tr{
+  text-align: left;
+}
