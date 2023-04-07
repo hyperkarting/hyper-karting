@@ -136,6 +136,11 @@ while (x < cycles):
             session_df = session_df[1]
             session_df.head()
 
+            datatable = bs4.BeautifulSoup(html, 'lxml')
+            sector_id = datatable.find(class_='w-full flex justify-centerds').get_text()
+            print(sector_id)
+            # session_check = session_id
+
             # Splits sectors into 3 columns
             if (len(session_df['S1 S2 S3']) > 0):
                 session_df[['Sector 1', 'Sector 2', 'Sector 3']] = session_df['S1 S2 S3'].str.split(' ', expand = True) 
@@ -227,7 +232,7 @@ while (x < cycles):
     except:
         pass
   
-    print(df)
+    # print(df)
     try:
         # Best times add in
         for i in range(0, (len(df['Kart']))):
@@ -316,7 +321,7 @@ while (x < cycles):
 
                                 
     print('\n')
-    print(main_df)
+
     print('\n')
     print(x)
     x+=1
@@ -397,5 +402,4 @@ while (x < cycles):
     
 
 
-print(main_df)
 driver.quit()
